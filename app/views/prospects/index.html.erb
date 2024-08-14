@@ -1,0 +1,20 @@
+
+<h1>LinkedIn CIO Prospects</h1>
+
+<p>A list of users on Linkedin with CIO title or affiliated with "CIO" text. Using Google's Search, advanced search to get LinkedIn Urls with CIO in a users profile.</p>
+<p>To simplify, I used Gumloop (Automation) to scrape the data and export to a csv file. Seeded the database with the CSV file.</p>
+
+<table  style="width:auto">
+  <tr>
+    <th>Name</th>
+    <th>Company</th>
+    <th>LinkedIn Url</th>
+  </tr>
+   <% @prospects.each do |prospect| %>
+  <tr>
+    <td style="padding:10px;"><%= prospect.name %></td>
+    <td style="padding:10px;"><%= prospect.company_name %></td>
+    <td style="padding:10px;"><a href="<%= prospect.linkedin_url %>" target="linkedin_"> <%= prospect.linkedin_url %></a></td>
+  </tr>
+    <% end %>
+</table>
