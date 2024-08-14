@@ -31,6 +31,3 @@ ruby bin\rails server
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 License
-
-## Acknowledgments
-Thanks to the Ruby on Rails Guides for the comprehensive tutorials and best practices.
